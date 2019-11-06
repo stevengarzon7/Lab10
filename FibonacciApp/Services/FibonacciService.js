@@ -2,6 +2,8 @@ var bigInt = require("big-integer");
 
 class FibonacciService {
     static getNthNumberInSequence(nth) {
+        console.log(`The app is goint to calculate ${nth} number in Fibonacci Sequence.`)        
+
         let nth_1 = bigInt.one;
         let nth_2 = bigInt.zero;
         let answer = bigInt.zero;

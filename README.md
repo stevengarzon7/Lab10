@@ -28,12 +28,26 @@ Adjunto a este laboratorio usted podrá encontrar una aplicación totalmente des
 
 `ssh scalability_lab@xxx.xxx.xxx.xxx`
 
-3. Instale la aplicación del laboratorio.
+3. Instale node, para ello siga la sección *Installing Node.js and npm using NVM* que encontrará en este [enlace](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/).
+4. Para instalar la aplicación adjunta al Laboratorio, suba la carpeta `FibonacciApp` a un repositorio al cual tenga acceso y ejecute estos comandos dentro de la VM:
+
+`git clone <your_repo>`
+
+`cd <your_repo>/FibonacciApp`
+
+`npm install`
+
+5. Para ejecutar la aplicación puede usar el comando `npm FibinacciApp.js`, sin embargo una vez pierda la conexión ssh la aplicación dejará de funcionar. Para evitar ese compartamiento usaremos *forever*. Ejecute los siguientes comando dentro de la VM.
+
+`npm install forever -g`
+
+`forever start FibinacciApp.js`
 
 **Preguntas**
 
 1. ¿Cuántos y cuáles recursos crea Azure junto con la VM?
 2. ¿Brevemente describa para qué sirve cada recurso?
+3. ¿Al cerrar la conexión ssh con la VM, por qué se cae la aplicación que ejecutamos con el comando `npm FibonacciApp.js`?
 
 
 
