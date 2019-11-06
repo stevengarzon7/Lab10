@@ -43,6 +43,8 @@ Adjunto a este laboratorio usted podrá encontrar una aplicación totalmente des
 
 `forever start FibinacciApp.js`
 
+6. Para verificar que la aplicación funciona, use un browser y user el endpoint `http://xxx.xxx.xxx.xxx:3000/6`. La respuesta debe ser ``.
+
 **Preguntas**
 
 1. ¿Cuántos y cuáles recursos crea Azure junto con la VM?

@@ -3,7 +3,7 @@ var FibonacciService = require('./Services/FibonacciService')
 
 var app = express();
 
-app.get('fibonacci/:nthIn', function (req, res) {
+app.get('/fibonacci/:nthIn', function (req, res) {
   var nth = FibonacciService.getNthNumberInSequence(parseInt(req.params.nthIn))
   res.send('The answer is ' + nth);
 });
